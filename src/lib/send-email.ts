@@ -1,13 +1,12 @@
 import { Resend } from "resend";
 
-const resend = new Resend(process.env.RESEND_API_KEY);
-
 export async function sendEmail(data: {
   name: string;
   phone: string;
   service: string;
   comment: string;
 }) {
+  const resend = new Resend(process.env.RESEND_API_KEY);
   await resend.emails.send({
     from: `Био Коммуналь Сайт <${process.env.RESEND_FROM_EMAIL || "onboarding@resend.dev"}>`,
     to: "biokomm@mail.ru",
