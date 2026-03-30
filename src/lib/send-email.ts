@@ -1,4 +1,14 @@
-import { Resend } from "resend";
+import nodemailer from "nodemailer";
+
+const transporter = nodemailer.createTransport({
+  host: "smtp.mail.ru",
+  port: 465,
+  secure: true,
+  auth: {
+    user: process.env.SMTP_USER,
+    pass: process.env.SMTP_PASS,
+  },
+});
 
 export async function sendEmail(data: {
   name: string;
@@ -6,10 +16,9 @@ export async function sendEmail(data: {
   service: string;
   comment: string;
 }) {
-  const resend = new Resend(process.env.RESEND_API_KEY);
-  await resend.emails.send({
-    from: `Био Коммуналь Сайт <${process.env.RESEND_FROM_EMAIL || "onboarding@resend.dev"}>`,
-    to: "biokomm@mail.ru",
+  await transporter.sendMail({
+    from: `Био Коммуналь Сайт <${process.env.SMTP_USER}>`,
+    to: process.env.SMTP_USER,
     subject: `Новая заявка: ${data.service}`,
     html: `
       <h2>Новая заявка с сайта</h2>

@@ -105,7 +105,7 @@ export default function ApplicationForm({
         >
           <option value="">Выберите услугу</option>
           {services.map((s) => (
-            <option key={s.id} value={s.id}>
+            <option key={s.id} value={s.title}>
               {s.title}
             </option>
           ))}

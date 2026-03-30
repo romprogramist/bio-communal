@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import { company } from "@/data/company";
 
 export const metadata: Metadata = {
-  title: "Политика конфиденциальности — Био Коммуналь",
+  title: "Политика конфиденциальности",
+  description: "Политика конфиденциальности ООО «Био Коммуналь». Обработка персональных данных в соответствии с ФЗ-152.",
+  robots: { index: false, follow: false },
 };
 
 export default function PrivacyPage() {

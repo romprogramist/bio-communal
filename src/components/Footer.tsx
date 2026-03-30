@@ -14,9 +14,9 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
           <div>
-            <img src="/logo.svg" alt={company.shortName} className="h-10 mb-4 brightness-0 invert" />
+            <img src="/logo.svg" alt={company.shortName} width={120} height={40} className="h-10 w-auto mb-4 brightness-0 invert" />
             <p className="text-white/70 text-sm leading-relaxed max-w-xs">
-              Санитарные услуги под ключ в Сочи. {company.experience} лет опыта.
+              {company.footerDescription}
             </p>
           </div>
 

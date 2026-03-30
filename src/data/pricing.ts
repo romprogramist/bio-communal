@@ -5,6 +5,7 @@ export const packages = [
     price: "3 000",
     unit: "₽/мес",
     highlighted: false,
+    image: "/images/products/product-3.png",
     features: [
       "Стандартные кабины",
       "Доставка и установка",
@@ -19,6 +20,7 @@ export const packages = [
     price: "5 000",
     unit: "₽/мес",
     highlighted: true,
+    image: "/images/products/product-5.png",
     features: [
       "Кабины Toi Toi",
       "Доставка и установка",
@@ -33,6 +35,7 @@ export const packages = [
     price: "от 15 000",
     unit: "₽/мес",
     highlighted: false,
+    image: "/images/products/product-6.png",
     features: [
       "VIP кабины",
       "Доставка и установка",

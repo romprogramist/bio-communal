@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Disallow: /_next/
+Disallow: /api/
+
+Sitemap: https://bio-communal.ru/sitemap.xml
+
+Host: https://bio-communal.ru

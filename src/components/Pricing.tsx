@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import ScrollReveal from "./ScrollReveal";
 import { packages } from "@/data/pricing";
 import { useShell } from "./ClientShell";
@@ -22,12 +23,25 @@ export default function Pricing() {
           {packages.map((pkg, i) => (
             <ScrollReveal key={pkg.id} delay={i * 0.1}>
               <div
-                className={`rounded-card p-8 flex flex-col h-full transition-all ${
+                className={`rounded-card overflow-hidden flex flex-col h-full transition-all ${
                   pkg.highlighted
                     ? "bg-primary text-white shadow-xl scale-[1.02] ring-2 ring-accent"
                     : "bg-white shadow-card hover:shadow-card-hover"
                 }`}
               >
+                {pkg.image && (
+                  <div className={`relative h-64 sm:h-72 overflow-hidden ${pkg.highlighted ? "bg-white/10" : "bg-gray-50"}`}>
+                    <Image
+                      src={pkg.image}
+                      alt={pkg.name}
+                      width={400}
+                      height={300}
+                      className="w-full h-full object-contain"
+                      loading="lazy"
+                    />
+                  </div>
+                )}
+                <div className="p-8 flex flex-col flex-grow">
                 {pkg.highlighted && (
                   <div className="bg-accent text-white text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full self-start mb-4">
                     Популярный
@@ -90,6 +104,7 @@ export default function Pricing() {
                 >
                   Заказать
                 </button>
+                </div>
               </div>
             </ScrollReveal>
           ))}
