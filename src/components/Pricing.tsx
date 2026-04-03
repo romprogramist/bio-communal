@@ -36,6 +36,7 @@ export default function Pricing() {
                       alt={pkg.name}
                       width={400}
                       height={300}
+                      sizes="(max-width: 768px) 100vw, 33vw"
                       className="w-full h-full object-contain"
                       loading="lazy"
                     />

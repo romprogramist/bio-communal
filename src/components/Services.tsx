@@ -71,6 +71,7 @@ function ImageSlider({ images, alt }: { images: string[]; alt: string }) {
         alt={`${alt} ${current + 1}`}
         width={400}
         height={300}
+        sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
         className="w-full h-full object-contain transition-transform duration-300"
         loading="lazy"
       />
@@ -140,6 +141,7 @@ export default function Services() {
                         alt={service.title}
                         width={400}
                         height={300}
+                        sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                         className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300"
                         loading="lazy"
                       />

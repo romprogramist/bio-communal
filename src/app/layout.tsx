@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import { Inter, Manrope } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin", "cyrillic"], variable: "--font-inter" });
-const manrope = Manrope({ subsets: ["latin", "cyrillic"], variable: "--font-manrope" });
+const inter = Inter({ subsets: ["latin", "cyrillic"], variable: "--font-inter", display: "swap", preload: true });
+const manrope = Manrope({ subsets: ["latin", "cyrillic"], variable: "--font-manrope", display: "swap", preload: true });
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://bio-communal.ru"),
@@ -49,7 +49,7 @@ export const metadata: Metadata = {
     siteName: "Био Коммуналь",
     images: [
       {
-        url: "/images/products/product-7.png",
+        url: "/images/products/product-7.webp",
         width: 1200,
         height: 630,
         alt: "Био Коммуналь — мобильные туалетные кабины TOI TOI в Сочи",
@@ -61,7 +61,7 @@ export const metadata: Metadata = {
     title: "Био Коммуналь — Аренда биотуалетов, вывоз ЖБО в Сочи",
     description:
       "17 лет опыта, 1000+ кабин, официальный представитель TOI TOI & DIXI. Звоните: +7 (988) 237-21-03.",
-    images: ["/images/products/product-7.png"],
+    images: ["/images/products/product-7.webp"],
   },
   robots: {
     index: true,
@@ -94,7 +94,7 @@ const jsonLd = [
       "Аренда и продажа новых и б/у биотуалетов, мобильных душевых кабин, откачка и вывоз ЖБО в Сочи. Аренда для людей с ограниченными возможностями. Официальный представитель TOI TOI & DIXI.",
     url: "https://bio-communal.ru",
     logo: "https://bio-communal.ru/logo.svg",
-    image: "https://bio-communal.ru/images/products/product-7.png",
+    image: "https://bio-communal.ru/images/products/product-7.webp",
     telephone: "+7 (988) 237-21-03",
     email: "biokomm@mail.ru",
     foundingDate: "2009",

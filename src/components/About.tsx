@@ -74,12 +74,13 @@ export default function About() {
             {/* Image side */}
             <div className="relative min-h-[300px] lg:min-h-full">
               <Image
-                src="/images/products/product-7.png"
+                src="/images/products/product-7.webp"
                 alt="Био Коммуналь — мобильные туалетные кабины"
                 width={800}
                 height={600}
+                sizes="(max-width: 1024px) 100vw, 50vw"
                 className="absolute inset-0 w-full h-full object-cover"
-                loading="lazy"
+                priority
               />
               <div className="absolute inset-0 bg-gradient-to-r from-primary via-primary/40 to-transparent lg:block hidden" />
               <div className="absolute inset-0 bg-gradient-to-t from-primary/60 to-transparent lg:hidden" />

@@ -14,13 +14,13 @@ const Lightbox = dynamic(() => import("yet-another-react-lightbox"), {
 });
 
 const certificates = [
-  { src: "/images/certificates/cert-1.jpg", alt: "Сертификат 1" },
-  { src: "/images/certificates/cert-2.jpg", alt: "Сертификат 2" },
-  { src: "/images/certificates/cert-3.jpg", alt: "Сертификат 3" },
-  { src: "/images/certificates/cert-4.jpg", alt: "Сертификат 4" },
-  { src: "/images/certificates/cert-5.png", alt: "Сертификат 5" },
-  { src: "/images/certificates/cert-6.png", alt: "Сертификат 6" },
-  { src: "/images/certificates/cert-7.jpg", alt: "Сертификат 7" },
+  { src: "/images/certificates/cert-1.webp", alt: "Сертификат 1" },
+  { src: "/images/certificates/cert-2.webp", alt: "Сертификат 2" },
+  { src: "/images/certificates/cert-3.webp", alt: "Сертификат 3" },
+  { src: "/images/certificates/cert-4.webp", alt: "Сертификат 4" },
+  { src: "/images/certificates/cert-5.webp", alt: "Сертификат 5" },
+  { src: "/images/certificates/cert-6.webp", alt: "Сертификат 6" },
+  { src: "/images/certificates/cert-7.webp", alt: "Сертификат 7" },
 ];
 
 export default function Certificates() {
@@ -65,6 +65,7 @@ export default function Certificates() {
                       alt={cert.alt}
                       width={400}
                       height={533}
+                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                       className="w-full h-full object-contain p-2"
                       loading="lazy"
                     />

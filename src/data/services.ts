@@ -3,7 +3,7 @@ export const services = [
     id: "sale",
     icon: "cart",
     title: "Продажа биотуалетов",
-    image: "/images/products/sale-bio.jpeg",
+    image: "/images/products/sale-bio.webp",
     description:
       "Продажа новых и б/у биотуалетов. Современные мобильные туалетные комплексы (МТК) для любых объектов — комфорт, гигиена и надёжность. Сертифицированные модели — гарантия качества. Доставляем, собираем, обслуживаем.",
   },
@@ -11,7 +11,7 @@ export const services = [
     id: "rental",
     icon: "toilet",
     title: "Аренда биотуалетов",
-    images: ["/images/products/rental-toitoi.jpeg", "/images/products/rental-3.jpeg", "/images/products/rental-1.jpeg", "/images/products/rental-2.jpeg"],
+    images: ["/images/products/rental-toitoi.webp", "/images/products/rental-3.webp", "/images/products/rental-1.webp", "/images/products/rental-2.webp"],
     description:
       "Долгосрочная и посуточная аренда биотуалетов, в том числе для людей с ограниченными возможностями. Обслуживание по графику и по заявке — комфорт и гигиена на вашем объекте, стройке или мероприятии. Минимум затрат, экологичный сервис с полным комплектом документации. Бесперебойный сервис 24/7.",
   },
@@ -19,7 +19,7 @@ export const services = [
     id: "shower",
     icon: "shower",
     title: "Аренда душевых кабин",
-    images: ["/images/products/shower-3.jpeg", "/images/products/shower-2.jpeg"],
+    images: ["/images/products/shower-3.webp", "/images/products/shower-2.webp"],
     description:
       "Современные душевые кабины в аренду — надёжное решение для дач, гостей, рабочих на площадках и персонала в любых условиях.",
   },
@@ -27,7 +27,7 @@ export const services = [
     id: "daily-rental",
     icon: "calendar",
     title: "Посуточная аренда",
-    images: ["/images/products/daily-rental-vip.jpeg", "/images/products/daily-rental-vip-2.jpeg", "/images/products/daily-rental-vip-3.jpeg"],
+    images: ["/images/products/daily-rental-vip.webp", "/images/products/daily-rental-vip-2.webp", "/images/products/daily-rental-vip-3.webp"],
     description:
       "Посуточная аренда VIP-биотуалетов для мероприятий, свадеб, корпоративов и частных событий. Чистые, комфортные кабины премиум-класса с доставкой и обслуживанием. Оперативная установка и вывоз в удобное для вас время.",
   },
@@ -35,7 +35,7 @@ export const services = [
     id: "waste",
     icon: "pump",
     title: "Откачка и вывоз ЖБО",
-    image: "/images/products/waste.jpg",
+    image: "/images/products/waste.webp",
     description:
       "Профессиональная откачка септиков, локальных очистных сооружений (ЛОС) и выгребных ям любого объёма. Заключение договоров на вывоз ЖБО. Используем современное оборудование и биопрепараты для эффективной обработки.",
   },
@@ -43,7 +43,7 @@ export const services = [
     id: "service",
     icon: "wrench",
     title: "Сервисное обслуживание биотуалета (мобильная туалетная кабина МТК)",
-    image: "/images/products/service-mtk.jpg",
+    image: "/images/products/service-mtk.webp",
     description:
       "Комплексное обслуживание мобильных туалетных комплексов: доставка, откачка и вывоз ЖБО, мойка кёрхером, дезинфекция сертифицированными средствами, наполнение расходными материалами, личный менеджер. Бесперебойная работа 24/7.",
   },

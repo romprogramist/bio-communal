@@ -55,7 +55,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-white/20 mt-8 pt-8 text-center text-white/50 text-sm">
+        <div className="border-t border-white/20 mt-8 pt-8 text-center text-white/90 text-sm">
           &copy; {new Date().getFullYear()} {company.shortName}. Все права защищены.
         </div>
       </div>

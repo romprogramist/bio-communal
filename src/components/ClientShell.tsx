@@ -62,6 +62,7 @@ export default function ClientShell({ children }: { children: ReactNode }) {
           preselectedService={modalService}
           onSuccess={handleSuccess}
           onError={handleError}
+          source="header"
         />
       </Modal>
 

@@ -11,19 +11,19 @@ const Lightbox = dynamic(() => import("yet-another-react-lightbox"), {
 
 const galleryImages = [
   ...Array.from({ length: 6 }, (_, i) => ({
-    src: `/images/gallery/gallery-${i + 1}.png`,
+    src: `/images/gallery/gallery-${i + 1}.webp`,
     alt: `Объект ${i + 1}`,
   })),
-  { src: "/images/gallery/truck-1.jpeg", alt: "Ассенизатор белый" },
-  { src: "/images/gallery/truck-2.jpeg", alt: "Ассенизатор голубой" },
-  { src: "/images/gallery/truck-3.jpeg", alt: "Ассенизатор оранжевый" },
-  { src: "/images/gallery/truck-4.jpg", alt: "Ассенизатор ночью" },
-  { src: "/images/gallery/truck-5.jpeg", alt: "Ассенизатор голубой вид сбоку" },
-  { src: "/images/gallery/truck-6.jpeg", alt: "Ассенизатор оранжевый сзади" },
-  { src: "/images/gallery/truck-7.jpeg", alt: "Ассенизатор белый вид сбоку" },
-  { src: "/images/gallery/truck-8.jpeg", alt: "Логотип Био Коммуналь на двери" },
-  { src: "/images/gallery/truck-9.jpeg", alt: "Ассенизатор Isuzu спереди" },
-  { src: "/images/gallery/truck-10.jpeg", alt: "Ассенизатор HD78" },
+  { src: "/images/gallery/truck-1.webp", alt: "Ассенизатор белый" },
+  { src: "/images/gallery/truck-2.webp", alt: "Ассенизатор голубой" },
+  { src: "/images/gallery/truck-3.webp", alt: "Ассенизатор оранжевый" },
+  { src: "/images/gallery/truck-4.webp", alt: "Ассенизатор ночью" },
+  { src: "/images/gallery/truck-5.webp", alt: "Ассенизатор голубой вид сбоку" },
+  { src: "/images/gallery/truck-6.webp", alt: "Ассенизатор оранжевый сзади" },
+  { src: "/images/gallery/truck-7.webp", alt: "Ассенизатор белый вид сбоку" },
+  { src: "/images/gallery/truck-8.webp", alt: "Логотип Био Коммуналь на двери" },
+  { src: "/images/gallery/truck-9.webp", alt: "Ассенизатор Isuzu спереди" },
+  { src: "/images/gallery/truck-10.webp", alt: "Ассенизатор HD78" },
 ];
 
 const images = galleryImages;
@@ -59,6 +59,7 @@ export default function Gallery() {
                     alt={img.alt}
                     width={400}
                     height={300}
+                    sizes="(max-width: 768px) 50vw, 33vw"
                     className="w-full h-full object-cover"
                     loading="lazy"
                   />

@@ -101,7 +101,7 @@ export default function Contacts() {
           <ScrollReveal delay={0.1}>
             <div className="bg-background rounded-card p-6 sm:p-8 shadow-card">
               <h3 className="font-heading text-xl font-bold mb-6">Оставить заявку</h3>
-              <ApplicationForm onSuccess={handleSuccess} onError={handleError} />
+              <ApplicationForm onSuccess={handleSuccess} onError={handleError} source="contacts" />
             </div>
           </ScrollReveal>
         </div>

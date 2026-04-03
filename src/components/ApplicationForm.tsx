@@ -4,6 +4,7 @@ import { useState } from "react";
 import { useForm, Controller } from "react-hook-form";
 import PhoneInput from "./PhoneInput";
 import { services } from "@/data/services";
+import { sendMetrikaGoal } from "./Analytics";
 
 type FormData = {
   name: string;
@@ -17,10 +18,12 @@ export default function ApplicationForm({
   preselectedService,
   onSuccess,
   onError,
+  source,
 }: {
   preselectedService?: string;
   onSuccess: () => void;
   onError: () => void;
+  source?: "header" | "contacts";
 }) {
   const [isSubmitting, setIsSubmitting] = useState(false);
 
@@ -49,6 +52,7 @@ export default function ApplicationForm({
         body: JSON.stringify(data),
       });
       if (!res.ok) throw new Error("Failed");
+      sendMetrikaGoal(preselectedService, source);
       reset();
       onSuccess();
     } catch {
