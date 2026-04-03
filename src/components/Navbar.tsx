@@ -32,7 +32,7 @@ export default function Navbar({ onOpenForm }: { onOpenForm: () => void }) {
         {/* Logo */}
         <a href="#" className="flex-shrink-0">
           <img
-            src="/logo.svg"
+            src="/logo.svg" width="120" height="36"
             alt={company.shortName}
             className={`h-7 lg:h-8 xl:h-9 w-auto transition-all duration-300 ${
               isScrolled || isMobileOpen ? "" : "brightness-0 invert"

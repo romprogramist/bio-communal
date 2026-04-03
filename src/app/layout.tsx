@@ -305,7 +305,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <meta name="yandex-verification" content="" />
         <meta name="google-site-verification" content="" />
       </head>
-      <body className="font-body text-text-primary bg-background">
+      <body className="font-body text-text-primary bg-background"><a href="#main" className="sr-only focus:not-sr-only focus:absolute focus:z-[100] focus:bg-primary focus:text-white focus:p-4">Перейти к содержимому</a>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

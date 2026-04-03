@@ -14,7 +14,7 @@ import Analytics from "@/components/Analytics";
 export default function Home() {
   return (
     <ClientShell>
-      <main>
+      <main id="main">
         <Hero />
         <About />
         <Services />

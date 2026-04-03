@@ -34,7 +34,7 @@ const PhoneInput = forwardRef<
       type="tel"
       value={value}
       onChange={handleChange}
-      placeholder="+7 (___) ___-__-__"
+      placeholder="+7 (___) ___-__-__" aria-label="Телефон"
       className={`w-full px-4 py-3 rounded-xl border ${
         error ? "border-red-500" : "border-gray-300"
       } focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary transition-colors ${className}`}

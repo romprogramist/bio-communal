@@ -67,7 +67,7 @@ export default function About() {
               <p className="text-white/80 text-lg leading-relaxed mb-6">
                 {company.description}
               </p>
-              <p className="text-white/60 leading-relaxed">
+              <p className="text-white/90 leading-relaxed">
                 {company.descriptionExtra}
               </p>
             </div>

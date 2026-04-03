@@ -10,10 +10,10 @@ function FaqItem({ question, answer }: { question: string; answer: string }) {
   return (
     <div className="border-b border-gray-200">
       <button
-        onClick={() => setIsOpen(!isOpen)}
+        onClick={() => setIsOpen(!isOpen)} aria-expanded={isOpen}
         className="w-full flex items-center justify-between py-5 text-left"
       >
-        <span className="font-heading font-semibold text-lg pr-4">{question}</span>
+        <h3 className="font-heading font-semibold text-lg pr-4">{question}</h3>
         <svg
           className={`w-5 h-5 text-primary flex-shrink-0 transition-transform ${
             isOpen ? "rotate-180" : ""

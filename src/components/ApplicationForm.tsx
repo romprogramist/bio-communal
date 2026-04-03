@@ -59,14 +59,14 @@ export default function ApplicationForm({
   };
 
   const inputClass =
-    "w-full px-4 py-3 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary/30 focus:border-primary transition-colors";
+    "w-full px-4 py-3 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary transition-colors";
 
   return (
     <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
       <div>
         <input
           {...register("name", { required: true, minLength: 2 })}
-          placeholder="Ваше имя"
+          placeholder="Ваше имя" aria-label="Ваше имя"
           className={`${inputClass} ${errors.name ? "border-red-500" : ""}`}
         />
         {errors.name && (
@@ -97,7 +97,7 @@ export default function ApplicationForm({
       </div>
 
       <div>
-        <select
+        <select aria-label="Выберите услугу"
           {...register("service", { required: true })}
           className={`${inputClass} ${errors.service ? "border-red-500" : ""} ${
             !preselectedService ? "text-text-secondary" : ""
@@ -118,7 +118,7 @@ export default function ApplicationForm({
       <div>
         <textarea
           {...register("comment", { maxLength: 500 })}
-          placeholder="Комментарий (необязательно)"
+          placeholder="Комментарий (необязательно)" aria-label="Комментарий"
           rows={3}
           className={inputClass}
         />

@@ -15,7 +15,7 @@ export default function Footer() {
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
           <div>
             <img src="/logo.svg" alt={company.shortName} width={120} height={40} className="h-10 w-auto mb-4 brightness-0 invert" />
-            <p className="text-white/70 text-sm leading-relaxed max-w-xs">
+            <p className="text-white/90 text-sm leading-relaxed max-w-xs">
               {company.footerDescription}
             </p>
           </div>
@@ -27,7 +27,7 @@ export default function Footer() {
                 <li key={link.href}>
                   <a
                     href={link.href}
-                    className="text-white/70 hover:text-accent transition-colors text-sm"
+                    className="text-white/90 hover:text-accent transition-colors text-sm"
                   >
                     {link.label}
                   </a>
@@ -38,7 +38,7 @@ export default function Footer() {
 
           <div>
             <h4 className="font-heading font-bold mb-4">Контакты</h4>
-            <div className="space-y-2 text-sm text-white/70">
+            <div className="space-y-2 text-sm text-white/90">
               <p>
                 <a href={`tel:${company.phoneRaw}`} className="hover:text-accent transition-colors">
                   {company.phone}
